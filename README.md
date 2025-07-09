@@ -8,6 +8,8 @@ This is a **personal portfolio website** showcasing my background and projects, 
 
 ## ✨ Features Implemented
 
+- **Navigation:** Navigate through the web.
+
 - **About Me section:** Brief introduction including education, work experience, and interests.
 - **Project showcase:**
   - Displays various projects with screenshots, descriptions, and technology stacks.
@@ -30,9 +32,10 @@ Visit the deployed website at:
 
 ### ✅ How to Use the Website
 
-1. Browse the **Home** and **About Me** sections to learn about my background.
-2. Explore the **Projects** section:
+1. Use navigation menu at top to move between sections.
+2. Browse the **Home** and **About Me** sections to learn about my background.
+3. Explore the **Projects** section:
    Use the project links (if any) to try the games or view live demos.
-3. Fill out the **Contact Me** form and submit your message. (For now its only static form it does not send any data)
+4. Fill out the **Contact Me** form and submit your message. (For now its only static form it does not send any data)
 
 ---
