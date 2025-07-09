@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Personal Website</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: white;
+        color: black;
+        margin: 20px;
+      }
+      header,
+      section,
+      footer {
+        border: 1px solid black;
+        padding: 15px;
+        margin-bottom: 20px;
+      }
+      h1,
+      h2,
+      h3 {
+        margin-top: 0;
+      }
+      #home {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .home-img img {
+        max-width: 300px;
+        height: auto;
+      }
+      .project-images {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 10px;
+      }
+      .project-images img {
+        width: 150px;
+        border: 1px solid black;
+      }
+      form div {
+        margin-bottom: 10px;
+      }
+      input,
+      textarea,
+      button {
+        padding: 5px;
+        border: 1px solid black;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      button {
+        cursor: pointer;
+      }
+      a {
+        color: blue;
+        text-decoration: underline;
+      }
+      @media (max-width: 768px) {
+        #home {
+          flex-direction: column;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Home Section -->
+    <header id="home">
+      <div class="home-text">
+        <h1>Hi, I'm Rizaldi Ibnu Mohamad</h1>
+        <p>Welcome to my personal website</p>
+      </div>
+      <div class="home-img">
+        <img src="assets/images/hero-img.png" alt="home-img" />
+      </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am a Junior Software Engineer with a passion for Web Development and Game Programming.</p>
+
+      <h3>Education</h3>
+      <ul>
+        <li>Bachelor of Informatic Technology, University of Musamus Merauke, 2024</li>
+      </ul>
+
+      <h3>Work Experience</h3>
+      <ul>
+        <li>IT Staff at Rumah Sakit Umum Daerah Merauke (2025 - Present)</li>
+      </ul>
+
+      <h3>Skills</h3>
+      <ul>
+        <li>HTML, CSS, JavaScript, PHP, MySQL, Laravel, C#, Unity</li>
+        <li>Git & GitHub</li>
+      </ul>
+
+      <h3>Interests</h3>
+      <p>I enjoy procrastinating.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <article>
+        <h3>3D Portfolio Website</h3>
+        <div class="project-images">
+          <img src="assets/images/projects/Screenshot 2025-03-12 125257.png" alt="Screenshot 1" />
+          <img src="assets/images/projects/image.png" alt="Screenshot 2" />
+          <img src="assets/images/projects/Screenshot 2025-07-09 181339.png" alt="Screenshot 3" />
+        </div>
+        <p>Simple 3D website with immersive 3D visuals to showcase my projects. <a href="https://rizaldi-portofolio.vercel.app/">This is the website</a></p>
+        <p><strong>Technologies:</strong> HTML, CSS, JavaScript, Three.js, Vite, Blender</p>
+      </article>
+
+      <article>
+        <h3>Hospital Laboratory Web System</h3>
+        <div class="project-images">
+          <img src="assets/images/projects/Screenshot 2024-01-02 162231.png" alt="Screenshot 1" />
+          <img src="assets/images/projects/Screenshot 2024-01-02 162635.png" alt="Screenshot 2" />
+          <img src="assets/images/projects/Screenshot 2024-01-02 220810.png" alt="Screenshot 3" />
+        </div>
+        <p>Hospital laboratory web system featuring document issuance authentication for faster processing.</p>
+        <p><strong>Technologies:</strong> PHP, MySQL, Bootstrap, JavaScript, jQuery, Chart.js</p>
+      </article>
+
+      <article>
+        <h3>System Information Administration of Population</h3>
+        <div class="project-images">
+          <img src="assets/images/projects/Screenshot (177).png" alt="Screenshot 1" />
+          <img src="assets/images/projects/Screenshot (178).png" alt="Screenshot 2" />
+          <img src="assets/images/projects/Screenshot (180).png" alt="Screenshot 3" />
+        </div>
+        <p>
+          A website designed to assist village officials in the resident data collection process and the issuance of official documents. The website speeds up the document issuance process, reduces human error in data input, and improves
+          overall efficiency.
+        </p>
+        <p><strong>Technologies:</strong> PHP, MySQL, Bootstrap</p>
+      </article>
+
+      <article>
+        <h3>Shooting Stars</h3>
+        <div class="project-images">
+          <img src="assets/images/projects/Screenshot (145).png" alt="Screenshot 1" />
+          <img src="assets/images/projects/Screenshot 2023-06-27 125500.png" alt="Screenshot 2" />
+          <img src="assets/images/projects/Screenshot 2025-01-24 140348.png" alt="Screenshot 3" />
+        </div>
+        <p>
+          A 2D top-down shooter developed in one week for an exam, designed to run without bugs. The boss battle features two stages, with transitions triggered by the boss’s health points. This project received an A score in the
+          Interactive Media subject.
+        </p>
+        <p><strong>Technologies:</strong> C#, Unity, Visual Studio</p>
+        <a href="https://rizzzydi-rizz.itch.io/shooting-star">Check The Game</a>
+      </article>
+
+      <article>
+        <h3>Bad Weather Taxi</h3>
+        <div class="project-images">
+          <img src="assets/images/projects/Screenshot 2025-03-15 112115.png" alt="Screenshot 1" />
+          <img src="assets/images/projects/Screenshot 2025-03-15 111920.png" alt="Screenshot 2" />
+          <img src="assets/images/projects/Screenshot 2024-09-15 153328.png" alt="Screenshot 3" />
+        </div>
+        <p>A 3D isometric game inspired by Crazy Taxi, developed in one week for the Brackeys Game Jam. The game received positive feedback from participants, particularly for its storm and lightning mechanics.</p>
+        <p><strong>Technologies:</strong> C#, Unity, Visual Studio</p>
+        <a href="https://rizzzydi-rizz.itch.io/bad-weather-taxi">Check The Game</a>
+      </article>
+
+      <article>
+        <h3>Cell In Rogue</h3>
+        <div class="project-images">
+          <img src="assets/images/projects/Screenshot 2024-07-19 134607.png" alt="Screenshot 1" />
+          <img src="assets/images/projects/Screenshot 2024-07-19 142720.png" alt="Screenshot 2" />
+          <img src="assets/images/projects/Screenshot 2024-07-19 142730.png" alt="Screenshot 3" />
+        </div>
+        <p>
+          A 2D top-down roguelike shooter featuring a procedurally generated arena. Developed using Unity to implement character movement, shooting mechanics, enemy AI, an upgrade system, and procedural arena generation. Completed the
+          development in less than two months and earned an A grade for my undergraduate thesis.
+        </p>
+        <p><strong>Technologies:</strong> C#, Unity, Visual Studio, Aseprite</p>
+        <a href="https://rizzzydi-rizz.itch.io/cell-in-rogue">Check The Game</a>
+      </article>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form action="#" method="post">
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <div>
+          <button type="submit">Send Message</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Rizaldi Ibnu Mohamad. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
