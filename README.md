@@ -4,11 +4,10 @@
 
 ## 📄 Overview
 
-This is a **personal portfolio website** showcasing my background and projects, serving as an online profile for potential employers and collaborators.
+This is a **personal portfolio website** showcasing my background and projects, serving as an online profile.
 
 ## ✨ Features Implemented
 
-- **Responsive layout:** Simple and readable on desktop and mobile devices.
 - **About Me section:** Brief introduction including education, work experience, and interests.
 - **Project showcase:**
   - Displays various projects with screenshots, descriptions, and technology stacks.
@@ -16,7 +15,6 @@ This is a **personal portfolio website** showcasing my background and projects, 
 - **Contact form:**
   - Basic form validation (`required` fields).
   - Collects name, email, and message for inquiries (backend email handling pending or using form services).
-- **Minimalist retro-style design:** Simple CSS for a nostalgic "early web" feel, focusing on clarity over aesthetics.
 
 ## 🔧 Technologies Used
 
