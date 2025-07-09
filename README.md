@@ -26,7 +26,7 @@ This is a **personal portfolio website** showcasing my background and projects, 
 ## 🚀 Accessing the Deployed Page
 
 Visit the deployed website at:  
-➡️ **[https://rizaldi-portofolio.vercel.app/](https://rizaldi-portofolio.vercel.app/)**
+➡️ **[https://revou-fsse-jun25.github.io/milestone-1-Rizaldi87/](https://revou-fsse-jun25.github.io/milestone-1-Rizaldi87/)**
 
 ### ✅ How to Use the Website
 
