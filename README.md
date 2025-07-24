@@ -4,6 +4,9 @@
 
 ## 📄 Overview
 
+![Home Section](assets/images/home-screenshot.png)
+![Home Section](assets/images/home-mobile.png)
+
 This is a **personal portfolio website** showcasing my background and projects, serving as an online profile.
 
 ## ✨ Features Implemented
@@ -21,7 +24,9 @@ This is a **personal portfolio website** showcasing my background and projects, 
 ## 🔧 Technologies Used
 
 - **HTML5** — page structure and semantic markup.
-- **CSS (inline & internal styles)** — minimalist styling for layout and readability.
+- **CSS** — responsive styling and readability.
+- **Javascript** — responsive nav and manage 3d objects
+- **Three Js** — render 3d objects
 - **Tools & Platforms:**
   - [GitHub](https://github.com/) for version control and repository management.
 
