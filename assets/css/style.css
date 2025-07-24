@@ -389,7 +389,70 @@ nav ul li a:hover::after {
 footer {
   text-align: center;
 }
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #faf0d5;
+  color: #620404;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  opacity: 1;
+  visibility: visible;
+}
+/* Tambahkan transisi hanya ketika class "fade" aktif */
+.loading-overlay.fade {
+  transition: opacity 1s ease, visibility 1s ease;
+}
 
+/* Saat show dihapus, fade out */
+.loading-overlay.fade:not(.show) {
+  opacity: 0;
+  visibility: hidden;
+}
+.loading-overlay h1 {
+  position: relative;
+  text-align: center;
+  letter-spacing: 0.2em;
+  padding: 10px;
+  width: 250px;
+  &::after,
+  &::before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: #620404;
+    position: absolute;
+    animation: loading 0.7s infinite alternate ease-in-out;
+  }
+  &::before {
+    top: 0;
+  }
+  &::after {
+    bottom: 0;
+  }
+}
+@keyframes loading {
+  0% {
+    left: -20px;
+    height: 30px;
+    width: 15px;
+  }
+  50% {
+    height: 8px;
+    width: 40px;
+  }
+  100% {
+    left: 100%;
+    height: 30px;
+    width: 15px;
+  }
+}
 @media (max-width: 768px) {
   nav ul {
     position: absolute;

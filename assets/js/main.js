@@ -82,3 +82,17 @@ function moveComputerForMobile() {
 
 window.addEventListener("load", moveComputerForMobile);
 window.addEventListener("resize", moveComputerForMobile);
+
+//loading overlay
+const loadingOverlay = document.querySelector(".loading-overlay");
+window.addEventListener("load", () => {
+  // Tambahkan class 'fade' untuk mulai mengaktifkan transisi
+  loadingOverlay.classList.add("show"); // pastikan overlay terlihat
+  requestAnimationFrame(() => {
+    // Tambahkan fade di frame berikutnya agar tidak trigger di awal
+    loadingOverlay.classList.add("fade");
+    setTimeout(() => {
+      loadingOverlay.classList.remove("show");
+    }, 1700);
+  });
+});
