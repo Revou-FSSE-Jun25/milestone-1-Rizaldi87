@@ -97,6 +97,7 @@ section h2 {
   font-weight: 900;
   width: fit-content;
   z-index: 1;
+  transition: color 200ms ease-in-out;
 }
 .project-info a:hover {
   color: #620404;
@@ -125,7 +126,58 @@ section h2 {
   width: 500px;
   height: auto;
 }
-
+.image-slider {
+  position: relative;
+  width: 400px;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  border: solid 2px #620404;
+  border-radius: 10px;
+  box-shadow: 0px 0px 14px 2px rgba(98, 4, 4, 0.75);
+  -webkit-box-shadow: 0px 0px 14px 2px rgba(98, 4, 4, 0.75);
+  -moz-box-shadow: 0px 0px 14px 2px rgba(98, 4, 4, 0.75);
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  transition: transform 0.2s ease;
+  will-change: transform;
+}
+.image-slider:hover {
+  transform: scale(1.03) rotateZ(2deg);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 10px 20px rgba(98, 4, 4, 0.5);
+}
+.slider-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.slider-wrapper img {
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  color: #620404;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+.prev {
+  left: 10px;
+}
+.next {
+  right: 10px;
+}
 form div {
   margin-bottom: 10px;
 }
@@ -392,6 +444,9 @@ footer {
   }
   .project-info h3 {
     text-align: center;
+  }
+  .image-slider {
+    width: 100%;
   }
   .computer {
     width: 100%;
