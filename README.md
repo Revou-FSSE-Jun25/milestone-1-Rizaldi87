@@ -4,10 +4,27 @@
 
 ## 📄 Overview
 
+This is a **personal portfolio website** showcasing my background and projects, serving as an online profile.
+
+### Home Section
+
 ![Home Section](assets/images/home-screenshot.png)
 ![Home Section](assets/images/home-mobile.png)
 
-This is a **personal portfolio website** showcasing my background and projects, serving as an online profile.
+### About Sections
+
+![About Section](assets/images/about-screenshot.png)
+![About Section](assets/images/about-mobile.png)
+
+### Projects Sections
+
+![project Section](assets/images/project-screenshot.png)
+![project Section](assets/images/project-mobile.png)
+
+### Contact Sections
+
+![Contact Section](assets/images/contact-screenshot.png)
+![Contact Section](assets/images/contact-mobile.png)
 
 ## ✨ Features Implemented
 
@@ -25,7 +42,7 @@ This is a **personal portfolio website** showcasing my background and projects, 
 
 - **HTML5** — page structure and semantic markup.
 - **CSS** — responsive styling and readability.
-- **Javascript** — responsive nav and manage 3d objects
+- **Javascript** — responsive nav, responsive in project section, image slider in project sesction and manage 3d objects
 - **Three Js** — render 3d objects
 - **Tools & Platforms:**
   - [GitHub](https://github.com/) for version control and repository management.
@@ -41,6 +58,6 @@ Visit the deployed website at:
 2. Browse the **Home** and **About Me** sections to learn about my background.
 3. Explore the **Projects** section:
    Use the project links (if any) to try the games or view live demos.
-4. Fill out the **Contact Me** form and submit your message. (For now its only static form it does not send any data)
+4. Fill out the **Contact Me** form and submit your message. (For now its only static form it does not send any message)
 
 ---
