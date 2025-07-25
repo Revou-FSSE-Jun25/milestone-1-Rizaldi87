@@ -122,10 +122,6 @@ section h2 {
   font-size: 1.5rem;
   font-weight: 900;
 }
-.computer {
-  width: 500px;
-  height: auto;
-}
 .image-slider {
   position: relative;
   width: 400px;
@@ -211,6 +207,7 @@ nav {
   align-items: center;
   padding: 10px;
   transition: transform 200ms ease-in-out;
+  /* overflow-x: hidden; */
 }
 nav.hidden {
   transform: translateY(-100%);
@@ -279,11 +276,7 @@ nav ul li a:hover::after {
   align-items: center;
 }
 
-#room {
-  width: 400px;
-  height: 400px;
-}
-
+#room,
 #pictures {
   width: 400px;
   height: 400px;
@@ -454,22 +447,31 @@ footer {
   }
 }
 @media (max-width: 768px) {
+  header,
+  section,
+  footer {
+    padding: 5%;
+  }
+  #room,
+  #pictures {
+    width: 100%;
+  }
   nav ul {
     position: absolute;
-    top: 60px;
+    top: 59px;
     left: 0;
+    right: 0;
     width: 100%;
+    max-width: 100vw;
     background-color: #620404;
     flex-direction: column;
     align-items: center;
-    z-index: -100;
     transform: scaleY(0);
     transform-origin: top;
     transition: transform 0.3s ease-in-out;
   }
   nav ul.activate {
-    transform: scaleY(100%);
-    padding: 100px;
+    transform: scaleY(1);
   }
   .menu-icon {
     display: block;
@@ -480,9 +482,12 @@ footer {
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    align-items: center;
     gap: 50px;
   }
+
   .home-text h1 {
+    width: 100%;
     font-size: 3.5rem;
   }
   .home-text p {
@@ -511,11 +516,11 @@ footer {
   .image-slider {
     width: 100%;
   }
-  .computer {
-    width: 100%;
-  }
+
   #contact {
     flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
   }
   .contact-text {
     width: 100%;
@@ -528,5 +533,24 @@ footer {
   }
   #contact form {
     width: 100%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .image-slider {
+    width: 45%;
+  }
+  .project-info {
+    width: 45%;
+  }
+  #contact {
+    width: 100%;
+    padding: 5%;
+  }
+  .contact-text {
+    width: 45%;
+  }
+  #contact form {
+    width: 45%;
   }
 }
