@@ -538,20 +538,51 @@ footer {
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
+  #home {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  #about {
+    gap: 10px;
+  }
+  #room,
+  #pictures {
+    width: 100%;
+  }
+  .about-text {
+    width: 100%;
+  }
+
   .image-slider {
     width: 45%;
+  }
+
+  .home-text h1 {
+    width: 100%;
+    text-align: center;
+  }
+  .home-text p {
+    text-align: center;
+  }
+  .project-flex {
+    align-items: center;
   }
   .project-info {
     width: 45%;
   }
   #contact {
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
     width: 100%;
-    padding: 5%;
   }
   .contact-text {
-    width: 45%;
+    width: 100%;
   }
   #contact form {
-    width: 45%;
+    width: 100%;
   }
 }
