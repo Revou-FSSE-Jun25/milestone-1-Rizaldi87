@@ -277,7 +277,8 @@ nav ul li a:hover::after {
 
 #room,
 #pictures {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   height: 400px;
 }
 
